@@ -1,8 +1,8 @@
 var bs = require("browser-sync").create();
 
-bs.watch(['paralax/*.*', 'paralax/css/*.css', 'paralax/js/*.js']).on("change", bs.reload);
+bs.watch(['javascript2/*.*', 'javascript2/css/*.css', 'javascript2/js/*.js']).on("change", bs.reload);
 
 // Start a Browsersync proxy
 bs.init({
-  proxy: "kursLoftprodvinytyi/paralax"
+  proxy: "kursLoftprodvinytyi/javascript2"
 });
