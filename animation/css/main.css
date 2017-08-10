@@ -132,8 +132,18 @@ ul {
   width: 30%;
   stroke: #455a64;
   stroke-width: 4px; }
-  #heisenberg .group {
-    stroke-dasharray: 1200;
-    stroke-dashoffset: 1200; }
+.group {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+}
+
+#logo {
+  text-align: center;
+  display: block;
+  width: 30%;
+  fill: red;
+  margin: 0 auto;
+}
+
 
 /*# sourceMappingURL=main.css.map */

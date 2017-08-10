@@ -18,6 +18,29 @@ $(window).scroll(function () {
         'transform' : transformString
       });
     }
+  }());
+
+	(function () {
+		var
+			svg = $('#heisenberg'),
+			svgPath = svg.find('.group'),
+			svgPos = svg.offset().top,
+			windowMargin = $(window).height() / 3,
+			startAnimate = wScroll - svgPos + windowMargin,
+			pixelsElapsed = svgPos - wScroll,
+			percentsElapset = Math.ceil(pixelsElapsed / (svgPos - (svgPos - windowMargin)) *100),
+			percentsDraw = 1200 / 100 * percentsElapset;
+
+		if (startAnimate > 0) {
+			var drawAmount = percentsDraw;
+
+			if (drawAmount > 0) {
+        svgPath.css({
+          'stroke-dashoffset' : drawAmount
+        });
+			}
+
+		}
 
   }());
 }); //-> scroll_end
