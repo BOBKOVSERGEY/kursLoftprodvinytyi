@@ -1,0 +1,24 @@
+.container {
+  border: 1px dashed #7f8c8d;
+  display: flex;
+  height: 300px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .container__item {
+    padding: 10px;
+    width: 200px; }
+    .container__item_one {
+      background: #1abc9c; }
+    .container__item_two {
+      background: #3498db; }
+    .container__item_three {
+      background: #8e44ad; }
+    .container__item_four {
+      background: #2c3e50; }
+    .container__item_five {
+      background: #f2aaaa; }
+    .container__item_six {
+      background: navajowhite; }
+
+/*# sourceMappingURL=style.css.map */

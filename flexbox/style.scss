@@ -1,0 +1,50 @@
+.container {
+  border: 1px dashed #7f8c8d;
+  display: flex;
+  height: 300px;
+  //flex-direction: row; /*элементы располагаются по горизонтали*/
+  //flex-direction: row-reverse; /*элементы располагаются по в обратном порядке*/
+  //flex-direction: column; /*элементы располагаются по вертикали*/
+  //justify-content: flex-end; /*выровнять элементы по правому краю*/
+  //justify-content: flex-start; /*выровнять элементы по левому краю*/
+  //justify-content: center; /*выровнять элементы по центру*/
+ // justify-content: space-between; /*выровнять элементы по центру*/
+  //justify-content: space-between; /*выровнять элементы по центру*/
+  //align-items: flex-end; /*прижмется к нижнему краю родителя*/
+  //align-items: flex-start; /*прижмется к верхнему краю родителя*/
+  //align-items: stretch; /*растянется по все высоте - стоит по умолчанию*/
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap; // если не вмещается, то переносит на другую строчку
+  &__item {
+    padding: 10px;
+    width: 200px;
+    &:nth-child(3) {
+      //align-self: flex-end;
+      //margin-left: auto; /*прижимает все элементы к правому краю*/
+      //order: 3;
+    }
+    &:nth-child(6) {
+      //order: 2;
+    }
+    &_one {
+      background: #1abc9c;
+    }
+    &_two {
+      background: #3498db;
+    }
+    &_three {
+      background: #8e44ad;
+    }
+    &_four {
+      background: #2c3e50;
+    }
+    &_five {
+      background: #f2aaaa;
+    }
+    &_six {
+      background: navajowhite;
+    }
+  }
+}
+
