@@ -1,13 +1,17 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
 .container {
   border: 1px dashed #7f8c8d;
   display: flex;
   height: 300px;
-  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap; }
   .container__item {
     padding: 10px;
-    width: 200px; }
+    width: 200px;
+    flex: 1 1 auto; }
     .container__item_one {
       background: #1abc9c; }
     .container__item_two {
@@ -20,5 +24,12 @@
       background: #f2aaaa; }
     .container__item_six {
       background: navajowhite; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
+  .footer__wrapper {
+    flex: 1; }
 
 /*# sourceMappingURL=style.css.map */

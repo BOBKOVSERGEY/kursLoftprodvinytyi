@@ -1,3 +1,7 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
 .container {
   border: 1px dashed #7f8c8d;
   display: flex;
@@ -13,12 +17,20 @@
   //align-items: flex-end; /*прижмется к нижнему краю родителя*/
   //align-items: flex-start; /*прижмется к верхнему краю родителя*/
   //align-items: stretch; /*растянется по все высоте - стоит по умолчанию*/
-  align-items: flex-start;
+  //align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap; // если не вмещается, то переносит на другую строчку
   &__item {
     padding: 10px;
     width: 200px;
+
+    flex: 1 1 auto; // все растянется по всей ширене автоматически
+    //flex-grow: 1; // сколько места займет элемент
+    //flex-shrink: 1;
+    //flex-basic: auto; // растягивать или нет элементы при переносе
+    &:nth-child(2) {
+      //flex: 2 3 auto;
+    }
     &:nth-child(3) {
       //align-self: flex-end;
       //margin-left: auto; /*прижимает все элементы к правому краю*/
@@ -45,6 +57,16 @@
     &_six {
       background: navajowhite;
     }
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  //color: #fff;
+  &__wrapper {
+    flex: 1;
+    //margin-top: auto;
   }
 }
 
