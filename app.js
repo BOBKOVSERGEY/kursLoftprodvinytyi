@@ -1,8 +1,8 @@
 var bs = require("browser-sync").create();
 
-bs.watch(['./flexbox/app/*.*', './flexbox/app/css/style.scss', './flexbox/app/css/style.css']).on("change", bs.reload);
+bs.watch(['./interactivnye-elementy/*.*', './interactivnye-elementy/css/style.scss', './interactivnye-elementy/css/style.css']).on("change", bs.reload);
 
 // Start a Browsersync proxy
 bs.init({
-  server: "./flexbox/app"
+  server: "./interactivnye-elementy"
 });

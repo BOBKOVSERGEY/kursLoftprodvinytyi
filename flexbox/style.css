@@ -32,4 +32,10 @@ html, body {
   .footer__wrapper {
     flex: 1; }
 
+.footer-block {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+}
+
 /*# sourceMappingURL=style.css.map */
